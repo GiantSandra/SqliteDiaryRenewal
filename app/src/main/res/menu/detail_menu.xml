@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="freshman.sqlitediary2.DiaryDetail">
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/sample_add_list_96"
+        android:title="編集"
+        app:showAsAction="always"
+        android:orderInCategory="110" />
+
+    <item
+        android:id="@+id/action_refresh_in_detail"
+        android:icon="@drawable/sample_synchronize_96"
+        android:title="更新"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="111"/>
+
+
+</menu>

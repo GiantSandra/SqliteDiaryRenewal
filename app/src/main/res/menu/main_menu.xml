@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="freshman.sqlitediary2.SqliteDiary2">
+    <item
+        android:id="@+id/toolbar_search"
+        android:orderInCategory="102"
+        android:title="検索"
+        android:icon="@drawable/sample_search_96"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item
+        android:id="@+id/action_reload"
+        android:icon="@drawable/sample_available_updates_96"
+        android:title="更新"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:visible="true" />
+
+</menu>
