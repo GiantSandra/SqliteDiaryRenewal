@@ -2,4 +2,10 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--StartMenu CardView Margin-->
+    <dimen name="start_menu_cardview_marginLeft">10dp</dimen>
+    <dimen name="start_menu_cardview_marginTop">10dp</dimen>
+    <dimen name="start_menu_cardview_marginRight">10dp</dimen>
+    <dimen name="start_menu_cardview_marginBottom">10dp</dimen>
 </resources>

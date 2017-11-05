@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">銭湯日記</string>
+    <string name="app_name">銭湯日記2</string>
+
+    <!--Start Menu Wordings-->
+    <string name="card_title_all_list">銭湯一覧</string>
+    <string name="card_title_favorite_list">お気に入り</string>
+    <string name="card_title_search_near">近くの銭湯を探す</string>
+    <string name="card_title_select_by_map">地図から探す</string>
+    <string name="card_title_status">ステータス</string>
 </resources>
