@@ -22,22 +22,22 @@ public class MarkerInfo {
     private int id;
     private String name;
     private String address;
+    private String titleImagePath = null;
     private LatLng latLng;
     private boolean isVisible = true;
     private boolean isVisited = false;
 
-    int count;
 
     private Context context;
 
-    public MarkerInfo(int id, String name, String address, Context context){
+    public MarkerInfo(int id, String name, String address, String titleImagePath, Context context){
 
         this.context = context;
 
         this.id = id;
         this.name = name;
         this.address = address;
-        this.count = count;
+        this.titleImagePath = titleImagePath;
         this.latLng = convertAddressToLatlng(this.address, context);
 
     }
@@ -87,5 +87,9 @@ public class MarkerInfo {
 
     public boolean isVisited() {
         return isVisited;
+    }
+
+    public String getTitleImagePath() {
+        return titleImagePath;
     }
 }
