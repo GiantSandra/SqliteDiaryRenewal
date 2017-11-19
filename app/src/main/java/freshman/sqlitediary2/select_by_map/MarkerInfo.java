@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
+import freshman.sqlitediary2.LocationController;
+
 /**
  * Created by gin on 2017/11/05.
  */
@@ -30,7 +32,7 @@ public class MarkerInfo {
 
     private Context context;
 
-    public MarkerInfo(int id, String name, String address, String titleImagePath, Context context){
+    public MarkerInfo(int id, String name, String address, String titleImagePath, boolean isVisited, Context context, boolean doneAddressConverted){
 
         this.context = context;
 
@@ -38,8 +40,24 @@ public class MarkerInfo {
         this.name = name;
         this.address = address;
         this.titleImagePath = titleImagePath;
+        this.isVisited = isVisited;
         this.latLng = convertAddressToLatlng(this.address, context);
+    }
 
+    public MarkerInfo(int id, String name, String address, String titleImagePath,double latitude, boolean isVisited, double longitude, Context context){
+
+        this.context = context;
+
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.titleImagePath = titleImagePath;
+        this.isVisited = isVisited;
+        this.latLng = new LatLng(latitude, longitude);
+    }
+
+    private LatLng convertAddressToLatlng(String address, Context context) {
+        return LocationController.convertAddressToLatlng(address,context);
     }
 
     public int getId() {
@@ -58,31 +76,7 @@ public class MarkerInfo {
         return latLng;
     }
 
-    //Convert Address to LatLng
-    private LatLng convertAddressToLatlng(String address, Context context){
 
-        Geocoder geocoder = new Geocoder(context, Locale.getDefault());
-        double latitude;
-        double longitude;
-        try{
-            List<Address> addressList = geocoder.getFromLocationName(address, 1);
-            if(!addressList.isEmpty()){
-                Address address1 = addressList.get(0);
-                latitude = address1.getLatitude();
-                longitude = address1.getLongitude();
-                Log.i("latitude", String.valueOf(latitude));
-                Log.i("longitude", String.valueOf(longitude));
-                return new LatLng(latitude,longitude);
-            } else {
-                return new LatLng(1, 0);
-            }
-
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-
-        return null;
-    }
 
 
     public boolean isVisited() {
