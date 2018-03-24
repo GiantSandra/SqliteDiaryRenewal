@@ -9,224 +9,90 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="freshman.sqlitediary2.status.StatusActivity">
+    tools:context="freshman.sqlitediary2.status.StatusActivity"
+    android:animateLayoutChanges="true">
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
             android:src="@mipmap/ic_launcher" />
     </LinearLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="40dp"
-                android:text="Achievement"
+                android:layout_marginBottom="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"/>
+                android:text="Achievement"
+                android:textSize="40dp" />
+
             <TextView
+                android:id="@+id/counter_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="40dp"
                 android:text="0"
-                android:id="@+id/counter_text"/>
+                android:textSize="40dp" />
             <TableLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/circle_3_item"
-                        android:layout_margin="10dp"/>
-                </TableRow>
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true"
+                android:id="@+id/stamp_table">
+                <include layout="@layout/table_row_stamp" android:id="@+id/stamp_table_row"/>
+                <include layout="@layout/table_row_stamp" android:id="@+id/stamp_table_row"/>
+                <include layout="@layout/table_row_stamp" android:id="@+id/stamp_table_row"/>
+                <include layout="@layout/table_row_stamp" android:id="@+id/stamp_table_row"/>
+                <include layout="@layout/table_row_stamp" android:id="@+id/stamp_table_row"/>
+                <include layout="@layout/table_row_stamp" android:id="@+id/stamp_table_row"/>
+                <include layout="@layout/table_row_stamp" android:id="@+id/stamp_table_row"/>
+                <include layout="@layout/table_row_stamp" android:id="@+id/stamp_table_row"/>
+                <include layout="@layout/table_row_stamp" android:id="@+id/stamp_table_row"/>
+                <include layout="@layout/table_row_stamp" android:id="@+id/stamp_table_row"/>
+                <include layout="@layout/table_row_stamp" android:id="@+id/stamp_table_row"/>
+                <include layout="@layout/table_row_stamp" android:id="@+id/stamp_table_row"/>
+                <include layout="@layout/table_row_stamp" android:id="@+id/stamp_table_row"/>
             </TableLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="start"
+                    android:id="@+id/button"/>
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>

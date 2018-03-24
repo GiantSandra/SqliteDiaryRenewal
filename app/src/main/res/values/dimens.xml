@@ -8,4 +8,14 @@
     <dimen name="start_menu_cardview_marginTop">10dp</dimen>
     <dimen name="start_menu_cardview_marginRight">10dp</dimen>
     <dimen name="start_menu_cardview_marginBottom">10dp</dimen>
+
+    <!--Status Stamp Margin-->
+    <dimen name="stamp_margin_left">2dp</dimen>
+    <dimen name="stamp_margin_right">2dp</dimen>
+    <dimen name="stamp_margin_top">2dp</dimen>
+    <dimen name="stamp_margin_bottom">2dp</dimen>
+
+    <!--Space size for Stamp-->
+    <dimen name="space_width_for_stamp">28dp</dimen>
+    <dimen name="space_height_for_stamp">28dp</dimen>
 </resources>
